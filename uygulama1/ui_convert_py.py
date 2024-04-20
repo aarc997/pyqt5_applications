@@ -12,7 +12,7 @@ def dosyaAdiniDuzenle(dosyaadi):
 
 
 dosya_adi = input("aynı klasörde bulunan ui dosyasının adını uzantısıyla birlikte girin(örnek : sexy-ui.ui):")
-with open(f"{dosyaAdiniDuzenle(dosya_adi)}","w",encoding="utf-8") as fout:
+with open(dosyaAdiniDuzenle(dosya_adi),"w",encoding="utf-8") as fout:
     uic.compileUi(dosya_adi,fout)
 
 
